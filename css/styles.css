@@ -1,7 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #434455;
+}
+.container {
+   max-width: 1158px;
+  padding-left:  0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container .page-nav {
+  height: 72px;
 }
 .contacts {
   color: #434455;
