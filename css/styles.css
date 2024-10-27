@@ -15,9 +15,12 @@ body {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
+  list-style: none;
 }
-.container .page-nav {
-  height: 72px;
+.container .page-header {
+  display: block;
+  justify-content: space-between;
+  
 }
 .contacts {
   display: flex;
@@ -93,6 +96,7 @@ body {
 /* Section-3 */
 .team {
   background-color: #f4f4fd;
+  justify-content: center;
 }
 
 .team-dscr {
@@ -164,6 +168,7 @@ body {
 }
 img {
   display: block;
+
 }
 .card-content {
 border: #ffffff;
@@ -172,4 +177,8 @@ padding: 0px 0px 32px 0px;
 overflow: hidden;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
