@@ -10,20 +10,31 @@ body {
   color: #434455;
 }
 .container {
-   max-width: 1158px;
+  max-width: 1158px;
   padding-left:  0;
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
   list-style: none;
 }
-.container .page-header {
-  display: block;
-  justify-content: space-between;
+.header .container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.page-header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+  margin: 40px;
+  padding: 24px 0;
   
 }
 .contacts {
-  display: flex;
   color: #434455;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -31,6 +42,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  text-decoration: none;
 }
 
 .page-nav-link {
@@ -67,6 +79,9 @@ body {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+  margin-right: 76px;
+  
+
 }
 
 /* Section-2  */
