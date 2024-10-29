@@ -26,6 +26,7 @@ body {
   display: flex;
   gap: 24px;
   list-style-type: none;
+  flex-basis: calc((100% - 3 * 24px));
 }
 .descr li {
   margin-right: 24px;
@@ -61,10 +62,12 @@ body {
 }
 .con-link {
   display: flex;
+}
+.con-link li {  
   gap: 40px;
   margin-right: 40px;
 }
-.con-link ul li:last-child {
+.con-link li:last-child {
   margin-right: 0;
 }
 
@@ -103,6 +106,7 @@ body {
 }
 .visually-hidden {
   visibility: hidden;
+  opacity: 0;
 }
 .button:hover,
 .button:focus {
@@ -255,7 +259,7 @@ body {
   text-align: center;
 }
 img {
-  display: flex;
+  display: block;
 }
 .card-content {
   border: #ffffff;
@@ -268,7 +272,7 @@ img {
 }
 .section {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 120px; 
 }
 .app-name {
   padding: 32px 16px;
