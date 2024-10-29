@@ -15,13 +15,24 @@ body {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
-  list-style: none;
 }
 .header .container {
   display: flex;
   margin: 0 auto;
   padding: 0 15px;
   height: 72px;
+}
+.descr{
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
+.descr li {
+  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
+}
+.descr li:last-child{
+  margin-right: 0;
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -80,6 +91,18 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+.sec-container{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.visually-hidden {
+  visibility: hidden;
 }
 .button:hover,
 .button:focus {
@@ -94,6 +117,7 @@ body {
   color: #4d5ae5;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 /* Section-2  */
@@ -104,12 +128,17 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.portfolio{
+  background-color: #f4f4fd;
+  padding: 120px 0;
 
+}
 .description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 8px; 
 }
 /* Section-2 End */
 
@@ -119,13 +148,22 @@ body {
 
 .page-title {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 /* Section-3 */
 .team {
-  background-color: #f4f4fd;
-  justify-content: center;
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
+.team li {
+  margin-right: 24px;
 }
 
+.team li:last-child{
+  margin-right: 0;
+}
 .team-dscr {
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
@@ -140,6 +178,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .title {
@@ -148,6 +187,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
 }
 .page-down {
   line-height: 1.5;
