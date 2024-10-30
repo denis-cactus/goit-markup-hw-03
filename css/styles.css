@@ -63,7 +63,7 @@ body {
 .con-link {
   display: flex;
 }
-.con-link li {  
+.con-link li {
   gap: 40px;
   margin-right: 40px;
 }
@@ -100,7 +100,7 @@ body {
   border: none;
   border-radius: 4px;
 }
-.sec-container {
+.container .sec-container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -201,13 +201,13 @@ body {
 .row li:nth-of-type(2n + 1) {
   margin-bottom: 0;
 }
-.title {
+.page-title .container .title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 496px;
+  /* max-width: 496px;  */
 }
 .page-down {
   line-height: 1.5;
@@ -272,7 +272,7 @@ img {
 }
 .section {
   padding-top: 120px;
-  padding-bottom: 120px; 
+  padding-bottom: 120px;
 }
 .app-name {
   padding: 32px 16px;
