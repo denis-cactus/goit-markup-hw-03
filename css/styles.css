@@ -9,16 +9,19 @@ body {
   background-color: #ffffff;
   color: #434455;
 }
+ul {
+  list-style-type: none;
+}
 .head {
   color: #2e2f42;
 }
-.header  {
+/* .header {
   display: flex;
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -29,31 +32,23 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 76px;
-  /* margin-left: 156px;
-  margin-top: 24px;
-  margin-bottom: 24px; */
 }
-
-.container {
-  max-width: 1158px;
-  /* padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0; */
-}
-.header {
-  border-bottom: 1px solid #e7e9fc;
-  height: 72px;
-}
-.header
-.page-header
-.menu {
-  list-style-type: none;
+/* .top-line * {
   display: flex;
+} */
+.top-line {
+  border-bottom: 1px solid #e7e9fc;
 }
-.menu .menu-nav {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.top-line .container {
+  width: 1158px;
+  /* display: flex; */
+  margin: 0 auto;
+}
+.top-line .container .page-header {
+  /* width: 1158px; */
+  /* margin: 0 auto; */
+  /* align-items: center; */
+  /* padding: 0 15px; */
 }
 .menu .menu-nav {
   color: #2e2f42;
@@ -63,10 +58,10 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .descr {
   display: flex;
   gap: 24px;
-  list-style-type: none;
   flex-basis: calc((100% - 3 * 24px));
 }
 .descr li {
@@ -76,18 +71,9 @@ body {
 .descr li:last-child {
   margin-right: 0;
 }
-.page-header,
-.logo {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0 15px;
-}
+
 .con-link {
-  display: flex;
   gap: 40px;
-  margin-right: 40px;
-  list-style-type: none;
 }
 .con-link li a {
   color: #434455;
@@ -103,10 +89,12 @@ body {
 .menu li {
   margin-right: 40px;
 }
-.menu li a:last-child {
+.menu li:last-child {
   margin-right: 0;
 }
-
+.con-link li a {
+  margin-right: 40px;
+}
 .con-link li a:last-child {
   margin-right: 0;
 }
@@ -130,10 +118,13 @@ body {
   border: none;
   border-radius: 4px;
 }
-.container .page-header .menu .menu-nav{
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+/* .top-line .container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
 .visually-hidden {
   visibility: hidden;
   opacity: 0;
@@ -171,22 +162,21 @@ body {
 .team {
   display: flex;
   gap: 24px;
-  list-style-type: none;
 }
-.team .card-content li {
+.team > li {
   margin-right: 24px;
   padding-top: 32px;
   padding-bottom: 32px;
+  width: calc((100% - 72px) / 4);
 }
 
-.team .card-content li:last-child {
+.team li:last-child {
   margin-right: 0;
 }
 .team-dscr {
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   width: calc((100% - 3 * 24px) / 4);
-  width: calc((100% - 48px) / 3);
 }
 /* Section-3  End */
 .our-team {
@@ -196,10 +186,8 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 72px;
 }
 .row {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -211,19 +199,21 @@ body {
 .row li:nth-of-type(2n + 1) {
   margin-bottom: 0;
 }
-.page-title {
-  background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  height: 600px;
+.cards .container {
+  background: #f4f4fd;
 }
-.title {
+
+.page-title .container {
+  background-color: #2e2f42;
+  padding: 188px 0 188px;
+}
+.page-title .container .title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
-  max-width: 496px;
+  align-items: center;
 }
 .page-down {
   line-height: 1.5;
@@ -247,7 +237,7 @@ body {
   padding: 100px 0 100px;
   margin-bottom: 16px;
 }
-.page-footer .container .foot {
+.page-footer .foot {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -280,7 +270,7 @@ img {
 .card-content {
   border: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+  padding: 32px 0;
   overflow: hidden;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -290,6 +280,7 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .app-name {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
