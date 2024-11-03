@@ -21,7 +21,7 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  
+  display: flex; 
 }
 .logo a {
   font-family: 'Raleway', sans-serif;
@@ -45,7 +45,7 @@ ul {
 
 .page-header {
   display: flex;
-  justify-content: space-between;
+  align-items: center; 
 }
 .menu .menu-nav {
   color: #2e2f42;
