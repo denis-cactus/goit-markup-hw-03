@@ -1,29 +1,26 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: #434455;
-  margin: 0 auto;
 }
 ul {
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
 }
 .head {
   color: #2e2f42;
 }
-.top-line .container {
-  width: 1158px;
+.container {
+  max-width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex; 
 }
-.logo a {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -33,46 +30,42 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 76px;
-  height: 24px;
 }
-.header-inner, .menu {
+
+.menu, .con-link{
   display: flex;
-  align-items: center;
+  gap: 40px;
 } 
+
 .top-line {
   border-bottom: 1px solid #e7e9fc;
 }
-
+.top-line .header-inner{
+  display: flex;
+}
 .page-header {
   display: flex;
   align-items: center; 
 }
-.menu .menu-nav {
+
+.menu-nav {
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 24px 0;
 }
 
-.menu li {
-  margin-right: 40px;
-}
-.menu li:last-child {
-  margin-right: 0;
-}
-.con-link {
-  display: flex;
-  gap: 40px; 
-}
+.menu li:not(:last-child),
 .con-link li:first-child {
   margin-right: 40px;
 }
+.menu li:last-child,
 .con-link li:last-child {
   margin-right: 0;
 }
-
 .con-link li a {
   color: #434455;
   font-family: 'Roboto', sans-serif;
@@ -117,15 +110,6 @@ ul {
   border: none;
   border-radius: 4px;
 }
-.container { 
-  max-width: 1158px;
-  padding-left: 0; 
-  padding-right: 0; 
-  margin-left: 0; 
-  margin-right: 0;
-  }
-  
-
 .visually-hidden {
   visibility: hidden;
   opacity: 0;
@@ -204,7 +188,7 @@ ul {
   background: #f4f4fd;
 }
 
-.section .container .title {
+.section-title {
   background-color: #2e2f42;
   padding: 188px 0 188px;
 }
@@ -265,9 +249,7 @@ ul {
   color: #434455;
   text-align: center;
 }
-img {
-  display: block;
-}
+
 .card-content {
   border: #ffffff;
   border-radius: 0 0 4px 4px;
