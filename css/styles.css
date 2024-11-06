@@ -10,7 +10,7 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
-}
+} 
 h1,
 h2,
 h3,
@@ -49,14 +49,10 @@ img {
   text-decoration: none;
   margin-right: 76px;
 }
-
 .menu,
 .con-link {
   display: flex;
 }
-
-
-
 .page-header {
   display: flex;
   align-items: center;
@@ -155,7 +151,6 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  
   line-height: 24px; 
   letter-spacing: 0.02em;
   color: #434455;
@@ -168,9 +163,6 @@ img {
 .team {
   display: flex;
   gap: 24px;
-  /* margin-right: 24px;
-  padding-top: 32px;
-  padding-bottom: 32px; */
 }
 
 .team li:last-child {
@@ -193,14 +185,26 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.row li {
+  margin-bottom: 48px;
+}
+.row .card-row:nth-child(1n + 4){
+  margin-bottom: 0;
+  /* background-color: tomato; */
+}
+.row li:not(:nth-child(3n)){
+  /* background-color: violet; */
   margin-right: 24px;
 }
-
-
-.row li:nth-of-type(3n) {
+.card-row{
+  width: calc((100% - 48px) / 3);
+} 
+.row li:nth-of-type(3n + 3) {
   margin-right: 0;
+  /* background-color: tomato; */
 }
 .section_team {
   background: #f4f4fd;
@@ -307,6 +311,6 @@ section {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
+ 
 }
 
