@@ -123,14 +123,15 @@ img {
 }
 .visually-hidden {
   visibility: hidden;
-  margin-bottom: 0;
+  pointer-events: none;
+  position: absolute;
 }
 .button:hover,
 .button:focus {
   background-color: #404bbf;
 }
 
-/* Section-2  */
+
 .main-descr {
   font-weight: 500;
   font-size: 20px;
@@ -163,7 +164,6 @@ img {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;  
-
 }
 
 .team li:last-child {
