@@ -32,9 +32,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-.top-line{
-  display: flex;
-}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -46,11 +44,12 @@ img {
   text-decoration: none;
   margin-right: 76px;
 }
-.inner {
+.top-line .container .header-container{
   display: flex;
   justify-content: space-between;
 }
-.menu, .con-link {
+.menu, 
+.con-link {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
