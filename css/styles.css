@@ -32,7 +32,10 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.menu li,
+.con-link li {
+  padding: 24px 0;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -53,7 +56,6 @@ img {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 24px 0;
 }
 .page-header {
   display: flex;
@@ -66,6 +68,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 24px 0;
 }
 
 .menu li:not(:last-child),
