@@ -233,7 +233,8 @@ img {
   text-align: center;
   max-width: 496px;
   margin-bottom: 48px;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 .page-down {
   line-height: 1.5;
