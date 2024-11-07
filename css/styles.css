@@ -32,7 +32,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-.top-line .container {
+.top-line{
   display: flex;
 }
 .logo {
@@ -46,13 +46,15 @@ img {
   text-decoration: none;
   margin-right: 76px;
 }
-.menu {
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+.menu, .con-link {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-}
-.con-link {
-  display: flex;
+  padding: 24px 0;
 }
 .page-header{
   display: flex;
@@ -66,9 +68,8 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.menu li {
-  padding: 24px 0;
-}
+
+
 .menu li:not(:last-child),
 .con-link li:first-child {
   margin-right: 40px;
